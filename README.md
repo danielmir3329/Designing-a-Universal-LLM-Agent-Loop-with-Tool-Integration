@@ -3,7 +3,7 @@
 This project demonstrates how to build a **provider-agnostic LLM agent loop** that can call tools, execute functions, and return final answers using a shared interface. The notebook shows how to separate the **agent logic**, **tool definitions**, and **LLM provider clients** so the same loop can work across multiple model providers with minimal code changes.
 
 The main idea is simple: an agent sends a user message to an LLM, checks whether the model wants to call a tool, executes that tool, sends the result back to the model, and repeats until a final answer is produced. By standardizing this workflow, the project makes it easier to reuse the same architecture with different LLM backends.
-
+ 
 ## Project Goals
 
 The notebook is designed to:
